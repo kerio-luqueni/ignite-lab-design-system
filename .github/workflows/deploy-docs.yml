@@ -1,4 +1,4 @@
-name: Deploying Storybook
+name: Deploy Storybook
 
 
 on:
@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: npm ci  
 
-      - name: Build storybook
+      - name: Build Storybook
         run: npm run build-storybook
 
       - name: Deploy Storybook 

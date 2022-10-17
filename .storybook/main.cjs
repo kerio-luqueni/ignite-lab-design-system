@@ -1,3 +1,5 @@
+const { config } = require("@storybook/addon-actions")
+
 module.exports = {
   "stories": [
     "../src/**/*.stories.mdx",
@@ -15,9 +17,9 @@ module.exports = {
   "features": {
     "storyStoreV7": true
   },
-
   viteFinal: (config, { configType }) => {
-    if (configType === 'PRODUCTION')
+    if (configType === 'PRODUCTION') 
       config.base = '/ignite-lab-design-system/'
+    return config
   }
 }
